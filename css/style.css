@@ -1,0 +1,110 @@
+/* reset */
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* color-palette */
+:root 
+{
+	--color-title: #e53170;
+	--color-backgound: #0f0e17;
+	--color-email: #239dcd;
+}
+
+/* font */
+body
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* utilities */
+.pull-left
+{
+    float: left;
+}
+
+.clearfix::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.debug
+{
+    border: 2px solid red;
+}
+
+/* html */
+.container
+{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+/* header  */
+h1
+{
+    font-weight: 800;
+    font-size: 2.5em;
+    color: var(--color-title);
+    text-align: center;
+    padding: 0 20px 30px;
+}
+
+p
+{
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px 25px;
+}
+
+/* Main */
+article
+{
+    width: calc(100% / 3);
+    padding: 10px 20px 30px 20px;
+}
+.box
+{
+    background-color: var(--color-backgound);
+    box-shadow: 10px 8px 5px lightgrey;
+}
+.profile
+{
+    display: inline-block;
+}
+.description
+{
+    display: inline-block;
+    padding: 0 0 0 15px;
+    vertical-align: middle;
+}
+
+.profile img
+{
+    width: 90px;
+    vertical-align: middle;
+}
+
+h2, .description > span
+{
+    color: white;
+    font-size: 0.9em;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+address
+{
+    color: var(--color-email);
+}
+
+
+
+
